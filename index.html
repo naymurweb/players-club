@@ -31,11 +31,10 @@
             <div class="lg:col-span-3  flex justify-center items-center lg=mt-0 my-10 lg:order-2 md:order-2 order-1 ">
                 <div class="text-center">
                     <h1 class=" lg:text-6xl  text-4xl text-orange-400 font-semibold">The Players Club</h1>
-                    <p class="text-white lg:mt-7 md-mt-6 mt-2">Amet minim mollit non deserunt ullamco est sit aliqua
-                        dolor do
-                        amet sint.
-                        Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
-                        nostrud amet.</p>
+                    <p class="text-white lg:mt-7 md-mt-6 mt-2">Join our club and let sports become a part of your life.
+                        Don’t walk through life just playing football.
+                        Don’t walk through life just being an athlete. Athletics will fade. Character and integrity
+                        and really making an impact on someone’s life, that’s the ultimate vision.</p>
                 </div>
             </div>
             <div class="lg:col-span-1 lg:block  hidden lg:order-3 ">
@@ -214,30 +213,31 @@
                             <h3 class="text-2xl font-semibold my-4">Budget</h3>
                             <div class="my-4">
                                 <p>Per Player </p>
-                                <input class=" border bg-transparent w-40" type="text">
+                                <input id="par-player" class=" border bg-transparent w-40" type="text">
                             </div>
-                            <button class="bg-blue-600 py-1 w-full rounded">Calculate</button>
+                            <button id="calculate" class="bg-blue-600 py-1 w-full rounded">Calculate</button>
 
                             <div class="flex justify-between my-10 font-bold">
                                 <p>Player Expenses :</p>
-                                <p>$5000</p>
+                                <p>$ <span id="total-amount">00</span></p>
                             </div>
 
                             <div class="my-4">
                                 <p>Manager</p>
-                                <input class="border bg-transparent w-40" type="text">
+                                <input id="manager-input" class="border bg-transparent w-40" type="text">
                             </div>
 
                             <div class="my-4">
                                 <p>Coach</p>
-                                <input class="border bg-transparent w-40" type="text">
+                                <input id="coach-input" class="border bg-transparent w-40" type="text">
                             </div>
 
-                            <button class="bg-blue-600 py-1 w-full rounded">Calculate Total</button>
+                            <button id="calculate-total" class="bg-blue-600 py-1 w-full rounded">Calculate
+                                Total</button>
 
                             <div class="flex justify-between my-10 font-bold">
                                 <p>Total :</p>
-                                <p class="text-orange-500 ">$11000</p>
+                                <p class="text-orange-500 ">$ <span id="total">00</span></p>
                             </div>
 
                         </div>
@@ -260,9 +260,8 @@
     </footer>
 
     <!-- javascript js add -->
-    <script src="./js/utility.js"></script>
     <script src="./js/selected.js"></script>
-    <script src="./js/calculate.js"></script>
+    <script src="./js/budget.js"></script>
 </body>
 
 </html>
