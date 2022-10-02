@@ -46,7 +46,7 @@
 
     <main>
         <!-- players section -->
-        <section
+        <section id="players"
             class="lg:container md:container sm:container mx-auto grid lg:grid-cols-4 md:grid-cols-3 grid-row-2 bg-slate-800">
 
             <div class="lg:col-span-3 md:col-span-2 col-span-1">
@@ -59,7 +59,7 @@
                         <img src="./images/player1.png" alt="">
 
                         <div class="text-center p-4">
-                            <h3 class="text-2xl font-semibold my-4">Lionel Messi</h3>
+                            <h3 class="text-2xl font-semibold my-4 player">Lionel Messi</h3>
                             <div class="flex justify-around mb-3">
                                 <p>36 Goals</p>
                                 <p>120 Assist</p>
@@ -73,7 +73,7 @@
                         <img src="./images/player2.png" alt="">
 
                         <div class="text-center p-4">
-                            <h3 class="text-2xl font-semibold my-4">Lionel Messi</h3>
+                            <h3 class="text-2xl font-semibold my-4 ">Neymar Jr</h3>
                             <div class="flex justify-around mb-3">
                                 <p>36 Goals</p>
                                 <p>120 Assist</p>
@@ -87,7 +87,7 @@
                         <img src="./images/player3.png" alt="">
 
                         <div class="text-center p-4">
-                            <h3 class="text-2xl font-semibold my-4">Lionel Messi</h3>
+                            <h3 class="text-2xl font-semibold my-4">Kylian Mbappé</h3>
                             <div class="flex justify-around mb-3">
                                 <p>36 Goals</p>
                                 <p>120 Assist</p>
@@ -101,7 +101,7 @@
                         <img src="./images/player4.png" alt="">
 
                         <div class="text-center p-4">
-                            <h3 class="text-2xl font-semibold my-4">Lionel Messi</h3>
+                            <h3 class="text-2xl font-semibold my-4">Vítor Machado</h3>
                             <div class="flex justify-around mb-3">
                                 <p>36 Goals</p>
                                 <p>120 Assist</p>
@@ -115,7 +115,7 @@
                         <img src="./images/player5.png" alt="">
 
                         <div class="text-center p-4">
-                            <h3 class="text-2xl font-semibold my-4">Lionel Messi</h3>
+                            <h3 class="text-2xl font-semibold my-4">Sergio Ramos</h3>
                             <div class="flex justify-around mb-3">
                                 <p>36 Goals</p>
                                 <p>120 Assist</p>
@@ -129,7 +129,7 @@
                         <img src="./images/player6.png" alt="">
 
                         <div class="text-center p-4">
-                            <h3 class="text-2xl font-semibold my-4">Lionel Messi</h3>
+                            <h3 class="text-2xl font-semibold my-4">Renato Sanches</h3>
                             <div class="flex justify-around mb-3">
                                 <p>36 Goals</p>
                                 <p>120 Assist</p>
@@ -143,7 +143,7 @@
                         <img src="./images/player2.png" alt="">
 
                         <div class="text-center p-4">
-                            <h3 class="text-2xl font-semibold my-4">Lionel Messi</h3>
+                            <h3 class="text-2xl font-semibold my-4">Raheem Sterling</h3>
                             <div class="flex justify-around mb-3">
                                 <p>36 Goals</p>
                                 <p>120 Assist</p>
@@ -157,7 +157,7 @@
                         <img src="./images/player1.png" alt="">
 
                         <div class="text-center p-4">
-                            <h3 class="text-2xl font-semibold my-4">Lionel Messi</h3>
+                            <h3 class="text-2xl font-semibold my-4">Karim Benzema</h3>
                             <div class="flex justify-around mb-3">
                                 <p>36 Goals</p>
                                 <p>120 Assist</p>
@@ -171,7 +171,7 @@
                         <img src="./images/player4.png" alt="">
 
                         <div class="text-center p-4">
-                            <h3 class="text-2xl font-semibold my-4">Lionel Messi</h3>
+                            <h3 class="text-2xl font-semibold my-4">Thomas Mulle</h3>
                             <div class="flex justify-around mb-3">
                                 <p>36 Goals</p>
                                 <p>120 Assist</p>
@@ -197,16 +197,13 @@
                         <div class="text-center p-4">
                             <h3 class="text-2xl font-semibold my-4">Selected - V</h3>
                             <div class="flex justify-around mb-3">
-                                <ol class="list-decimal text-left">
-                                    <li>Coffee</li>
-                                    <li>Tea</li>
-                                    <li>Coca Cola</li>
-                                    <li>Coffee</li>
-                                    <li>Tea</li>
+                                <ol id="main-order" class="list-decimal text-left">
+
+
                                 </ol>
 
                             </div>
-                            <button class="bg-blue-600 py-1 w-full rounded">SELECT</button>
+
                         </div>
                     </div>
 
@@ -214,7 +211,7 @@
                         class="bg-black text-white border border-slate-400 rounded-md p-2 drop-shadow-lg flex flex-col justify-center">
 
                         <div class="text-center p-4">
-                            <h3 class="text-2xl font-semibold my-4">Selected - V</h3>
+                            <h3 class="text-2xl font-semibold my-4">Budget</h3>
                             <div class="my-4">
                                 <p>Per Player </p>
                                 <input class=" border bg-transparent w-40" type="text">
@@ -260,9 +257,12 @@
     <footer
         class="lg:container md:container sm:container mx-auto  border-t border-slate-400 text-center bg-slate-800 text-white p-8">
         <p>Copyright @ 2022 All Rights Reserved.</p>
-
     </footer>
 
+    <!-- javascript js add -->
+    <script src="./js/utility.js"></script>
+    <script src="./js/selected.js"></script>
+    <script src="./js/calculate.js"></script>
 </body>
 
 </html>
